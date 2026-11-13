@@ -37,10 +37,10 @@ export class Estoque {
         }
 
     }
-    ListarAuditor(): void {
+    ListarLog(): void {
         console.log(this.produtosLog);
     }
-    CadastrarAuditor(produtoCadastrarLog: string): void {
+    CadastrarLog(produtoCadastrarLog: string): void {
         this.produtosLog.push(produtoCadastrarLog);
     }
 
