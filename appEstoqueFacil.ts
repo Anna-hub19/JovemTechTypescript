@@ -97,7 +97,8 @@ function FazerLogin(): void {
                 }
             }
             else if (opcao === 5) {
-                const senha = entrada("Digite a senha do auditor: ");
+                console.log("Digite a senha do auditor: ");
+                const senha = entrada("");
 
                 if (senha === senhaAuditor) {
                     console.log("Acesso autorizado!");
