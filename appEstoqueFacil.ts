@@ -65,7 +65,7 @@ function FazerLogin(): void {
                     console.log("qual produto deseja editar?");
                     const produtoEditar = entrada("");
 
-                    estoque.CadastrarAuditor(produtoEditar);
+                    estoque.CadastrarLog(produtoEditar);
 
                     console.log("Digite o novo nome do produto");
                     const novoProduto = entrada("");
@@ -86,7 +86,7 @@ function FazerLogin(): void {
                     console.log("qual produto deseja excluir?");
                     const produtoExcluir = entrada("");
 
-                    estoque.CadastrarAuditor(produtoExcluir);
+                    estoque.CadastrarLog(produtoExcluir);
 
                     estoque.Excluir(produtoExcluir);
 
@@ -102,7 +102,7 @@ function FazerLogin(): void {
 
                 if (senha === senhaAuditor) {
                     console.log("Acesso autorizado!");
-                    estoque.ListarAuditor();
+                    estoque.ListarLog();
 
                 } else {
                     console.log("Senha incorreta!");
